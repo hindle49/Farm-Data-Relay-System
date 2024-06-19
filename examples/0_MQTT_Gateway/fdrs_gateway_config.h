@@ -69,8 +69,8 @@
 //#define USE_LR  // Use ESP-NOW LR mode (ESP32 only)
 
 // WiFi and MQTT Credentials  -- These will override the global settings
-//#define WIFI_SSID   "Your SSID"  
-//#define WIFI_PASS   "Your Password"
+#define WIFI_SSID   "BTHub5-KH6F"  
+#define WIFI_PASS   "6be3d8bce6"
 
 // Use Static IP Address for WiFi connections
 // #define USE_STATIC_IPADDRESS     
@@ -80,6 +80,7 @@
 // #define DNS1_IPADDRESS      "192.168.0.1"    
 // #define DNS2_IPADDRESS      "192.168.0.2"    
 
+<<<<<<< Updated upstream
 // MQTT Settings
 // #define MQTT_ADDR   "192.168.0.8"
 // #define MQTT_PORT   1883 // Default MQTT port is 1883
@@ -94,6 +95,19 @@
 #define DST_RULE        USDST  // Daylight saving time rules: Use USDST for United States DST rules, EUDST for European Union
 #define TIME_SERVER       "0.us.pool.ntp.org"       // NTP time server to use. If FQDN at least one DNS server is required to resolve name
 #define STD_OFFSET      (-6)                // Local standard time offset in hours from UTC - if unsure, check https://time.is
+=======
+#define MQTT_ADDR   "192.168.1.53"
+#define MQTT_PORT   1883 // Default MQTT port is 1883
+#define MQTT_AUTH   //Enable MQTT authentication 
+#define MQTT_USER   "homeassistant"
+#define MQTT_PASS   "Loo2me1aaR4Mee5Ohquae6ohChitoh4chogiehoanoongaeL1iMahr3gai4Oosux"
+
+// NTP Time settings
+#define USDST
+// #define EUDST
+#define TIME_SERVER       "0.uk.pool.ntp.org"       // NTP time server to use. If FQDN at least one DNS server is required to resolve name
+#define STD_OFFSET      (-0)                // Local standard time offset in hours from UTC - if unsure, check https://time.is
+>>>>>>> Stashed changes
 #define DST_OFFSET      (STD_OFFSET + 1)    // Local savings time offset in hours from UTC - if unsure, check https://time.is
 #define TIME_FETCHNTP     60      // Time, in minutes, between fetching time from NTP server
 #define TIME_PRINTTIME    15     // Time, in minutes, between printing local time to debug

@@ -9,33 +9,43 @@
 #define GLOBAL_DBG_LEVEL 0
 
 
-#define GLOBAL_WIFI_SSID        "Your SSID"
-#define GLOBAL_WIFI_PASS        "Password"
+#define GLOBAL_WIFI_SSID        "BTHub5-KH6F"
+#define GLOBAL_WIFI_PASS        "6be3d8bce6"
 
-#define GLOBAL_DNS1_IPADDRESS    "8.8.8.8"   // Default to Google Primary DNS
-#define GLOBAL_DNS2_IPADDRESS    "8.8.4.4"   // Default to Google Secondary DNS
+#define GLOBAL_DNS1_IPADDRESS    192.168.1.254 //"8.8.8.8"   // Default to Google Primary DNS
+#define GLOBAL_DNS2_IPADDRESS    192.168.1.254 //"8.8.4.4"   // Default to Google Secondary DNS
 
-#define GLOBAL_MQTT_ADDR "192.168.0.8"
+#define GLOBAL_MQTT_ADDR "192.168.1.53"
 #define GLOBAL_MQTT_PORT 1883
 
 //#define GLOBAL_MQTT_AUTH   //uncomment to enable MQTT authentication  
-#define GLOBAL_MQTT_USER   "Your MQTT Username"
-#define GLOBAL_MQTT_PASS   "Your MQTT Password"
+#define GLOBAL_MQTT_USER   "homeassistant"
+#define GLOBAL_MQTT_PASS   "Loo2me1aaR4Mee5Ohquae6ohChitoh4chogiehoanoongaeL1iMahr3gai4Oosux"
 // MQTT Topics
 #define GLOBAL_TOPIC_DATA    "fdrs/data"
 #define GLOBAL_TOPIC_STATUS  "fdrs/status"
 #define GLOBAL_TOPIC_COMMAND "fdrs/command"
 
 // NTP Time Server
+<<<<<<< Updated upstream
 #define GLOBAL_DST_RULE        USDST    // Daylight saving time rules: Use USDST for United States DST rules, EUDST for European Union
 #define GLOBAL_TIME_SERVER      "0.us.pool.ntp.org"
 #define GLOBAL_STD_OFFSET      (-6)                // Local standard time offset in hours from UTC - if unsure, check https://time.is
 #define GLOBAL_DST_OFFSET      (STD_OFFSET + 1)    // Local savings time offset in hours from UTC - if unsure, check https://time.is
+=======
+#define GLOBAL_TIME_SERVER      "0.uk.pool.ntp.org"
+#define GLOBAL_LOCAL_OFFSET     (-0)    // Time in hours between local time and UTC
+>>>>>>> Stashed changes
 #define GLOBAL_TIME_FETCHNTP    60      // Time in minutes between fetching time from NTP server
 #define GLOBAL_TIME_PRINTTIME   15      // Time in minutes between printing local time
 #define GLOBAL_TIME_SEND_INTERVAL 60    // Time in minutes between sending out time
 
+<<<<<<< Updated upstream
 #define GLOBAL_LORA_FREQUENCY 915.0   // Carrier frequency in MHz. Allowed values range from 137.0 MHz to 1020.0 MHz (varies by chip).
+=======
+
+#define GLOBAL_LORA_FREQUENCY 868.0   // Carrier frequency in MHz. Allowed values range from 137.0 MHz to 1020.0 MHz (varies by chip).
+>>>>>>> Stashed changes
 #define GLOBAL_LORA_SF 7     // LoRa link spreading factor. Allowed values range from 6 to 12.
 #define GLOBAL_LORA_BANDWIDTH 125.0  // LoRa link bandwidth in kHz. Allowed values are 10.4, 15.6, 20.8, 31.25, 41.7, 62.5, 125, 250 and 500 kHz.
 #define GLOBAL_LORA_CR 5    // LoRa link coding rate denominator. Allowed values range from 5 to 8.
