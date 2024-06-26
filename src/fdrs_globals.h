@@ -28,9 +28,9 @@
 
 // NTP Time Server
 <<<<<<< Updated upstream
-#define GLOBAL_DST_RULE        USDST    // Daylight saving time rules: Use USDST for United States DST rules, EUDST for European Union
-#define GLOBAL_TIME_SERVER      "0.us.pool.ntp.org"
-#define GLOBAL_STD_OFFSET      (-6)                // Local standard time offset in hours from UTC - if unsure, check https://time.is
+#define GLOBAL_DST_RULE        EUDST    // Daylight saving time rules: Use USDST for United States DST rules, EUDST for European Union
+#define GLOBAL_TIME_SERVER      "0.uk.pool.ntp.org"
+#define GLOBAL_STD_OFFSET      (0)                // Local standard time offset in hours from UTC - if unsure, check https://time.is
 #define GLOBAL_DST_OFFSET      (STD_OFFSET + 1)    // Local savings time offset in hours from UTC - if unsure, check https://time.is
 =======
 #define GLOBAL_TIME_SERVER      "0.uk.pool.ntp.org"
@@ -41,7 +41,7 @@
 #define GLOBAL_TIME_SEND_INTERVAL 60    // Time in minutes between sending out time
 
 <<<<<<< Updated upstream
-#define GLOBAL_LORA_FREQUENCY 915.0   // Carrier frequency in MHz. Allowed values range from 137.0 MHz to 1020.0 MHz (varies by chip).
+#define GLOBAL_LORA_FREQUENCY 868.0   // Carrier frequency in MHz. Allowed values range from 137.0 MHz to 1020.0 MHz (varies by chip).
 =======
 
 #define GLOBAL_LORA_FREQUENCY 868.0   // Carrier frequency in MHz. Allowed values range from 137.0 MHz to 1020.0 MHz (varies by chip).
