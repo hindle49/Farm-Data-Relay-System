@@ -12,7 +12,7 @@
 
 // Interfaces
 #define USE_ESPNOW  
-#define USE_LORA
+//#define USE_LORA
 //#define USE_WIFI  // Will cause errors if used with ESP-NOW. Use a serial link instead!
 //#define USE_ETHERNET
 
@@ -51,7 +51,7 @@
 #define I2C_SCL 15
 
 // OLED -- Displays console debugging messages on an SSD1306 I²C OLED
-//#define USE_OLED    
+///#define USE_OLED    
 #define OLED_HEADER "FDRS"
 #define OLED_PAGE_SECS 30
 #define OLED_RST 16
@@ -63,8 +63,8 @@
 // #define RTC_ADDR 0x68
 
 // UART data interface pins (ESP32 only)
-#define RXD2 14
-#define TXD2 15
+//#define RXD2 14
+//#define TXD2 15
 
 //#define USE_LR  // Use ESP-NOW LR mode (ESP32 only)
 
@@ -91,9 +91,9 @@
 // #define TOPIC_COMMAND "fdrs/command"
 
 // NTP Time settings for gateways
-#define DST_RULE        EUDST // Daylight saving time rules: Use USDST for United States DST rules, EUDST for European Union
-#define TIME_SERVER       "0.uk.pool.ntp.org"       // NTP time server to use. If FQDN at least one DNS server is required to resolve name
-#define STD_OFFSET      (0)                // Local standard time offset in hours from UTC - if unsure, check https://time.is
+#define DST_RULE        USDST // Daylight saving time rules: Use USDST for United States DST rules, EUDST for European Union
+#define TIME_SERVER       "0.us.pool.ntp.org"       // NTP time server to use. If FQDN at least one DNS server is required to resolve name
+#define STD_OFFSET      (-6)                // Local standard time offset in hours from UTC - if unsure, check https://time.is
 #define DST_OFFSET      (STD_OFFSET + 1)    // Local savings time offset in hours from UTC - if unsure, check https://time.is
 #define TIME_FETCHNTP     60      // Time, in minutes, between fetching time from NTP server
 #define TIME_PRINTTIME    15     // Time, in minutes, between printing local time to debug
