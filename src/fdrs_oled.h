@@ -138,6 +138,6 @@ void init_oled(){
   delay(30);
   digitalWrite(OLED_RST, HIGH);
   display.init();
-  display.flipScreenVertically();
+  //display.flipScreenVertically();
   draw_OLED_header();
   }

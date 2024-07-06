@@ -4,7 +4,7 @@
 
 #include <fdrs_globals.h>
 
-#define READING_ID    1   //Unique ID for this sensor
+#define READING_ID    21   //Unique ID for this sensor
 #define GTWY_MAC      0x01 //Address of the nearest gateway
 
 #define USE_ESPNOW
@@ -13,7 +13,7 @@
 //#define POWER_CTRL    14
 
 #define FDRS_DEBUG     // Enable USB-Serial debugging
-//#define DBG_LEVEL 0    // 0 for minimal messaging, 1 for troubleshooting, 2 for development
+#define DBG_LEVEL 1    // 0 for minimal messaging, 1 for troubleshooting, 2 for development
 
 // I2C - OLED or RTC
 #define I2C_SDA 5
