@@ -12,7 +12,7 @@
 
 // Interfaces
 #define USE_ESPNOW  
-//#define USE_LORA
+#define USE_LORA
 //#define USE_WIFI  // Will cause errors if used with ESP-NOW. Use a serial link instead!
 //#define USE_ETHERNET
 
@@ -30,18 +30,18 @@
 
 // LoRa Configuration
 #define RADIOLIB_MODULE SX1276
-#define LORA_SS    18
-#define LORA_RST   14
-#define LORA_DIO   26
-#define LORA_BUSY  33
+#define LORA_SS    18       // T-beam 18   Heltec 18     original 18
+#define LORA_RST   14       // T-beam 23   Heltec 14     original 14
+#define LORA_DIO   26       // T-beam 26   Heltec 26     original 26
+#define LORA_BUSY  33       //             Heltec 35     oroginal 33 DIO1
 //#define USE_SX126X
 
 #define LORA_TXPWR 17   // LoRa TX power in dBm (: +2dBm - +17dBm (for SX1276-7) +20dBm (for SX1278))
 
 //#define CUSTOM_SPI
-#define LORA_SPI_SCK  5
-#define LORA_SPI_MISO 19
-#define LORA_SPI_MOSI 27
+#define LORA_SPI_SCK  5    // T-Beam 5    Heltec 5   original 5 
+#define LORA_SPI_MISO 19   // T-Beam 19   Heltec 19  original 19
+#define LORA_SPI_MOSI 27   // T-beam 27   Heltec 27  original 27
 
 //#define FDRS_DEBUG     // Enable USB-Serial debugging
 #define DBG_LEVEL 0    // 0 for minimal messaging, 1 for troubleshooting, 2 for development

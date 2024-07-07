@@ -30,7 +30,7 @@
 #define LORA_SS 18
 #define LORA_RST 14
 #define LORA_DIO 26
-#define LORA_BUSY  33
+#define LORA_BUSY  33      //DIO0 or 1    pin 34 or 35 on the Heltec
 //#define USE_SX126X
 
 //#define CUSTOM_SPI
