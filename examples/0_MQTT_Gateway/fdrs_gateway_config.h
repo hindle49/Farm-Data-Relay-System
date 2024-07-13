@@ -43,7 +43,7 @@
 #define LORA_SPI_MISO 19
 #define LORA_SPI_MOSI 27
 
-#define FDRS_DEBUG     // Enable USB-Serial debugging
+//#define FDRS_DEBUG     // Enable USB-Serial debugging
 #define DBG_LEVEL 1    // 0 for minimal messaging, 1 for troubleshooting, 2 for development
 
 // I2C - OLED or RTC
