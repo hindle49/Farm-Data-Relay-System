@@ -43,7 +43,7 @@
 #define LORA_SPI_MISO 19   // T-Beam 19   Heltec 19  original 19
 #define LORA_SPI_MOSI 27   // T-beam 27   Heltec 27  original 27
 
-//#define FDRS_DEBUG     // Enable USB-Serial debugging
+//define FDRS_DEBUG     // Enable USB-Serial debugging
 #define DBG_LEVEL 0    // 0 for minimal messaging, 1 for troubleshooting, 2 for development
 
 // I2C - OLED or RTC
@@ -51,7 +51,7 @@
 #define I2C_SCL 15
 
 // OLED -- Displays console debugging messages on an SSD1306 I²C OLED
-#define USE_OLED    
+//#define USE_OLED    
 #define OLED_HEADER "FDRS"
 #define OLED_PAGE_SECS 30
 #define OLED_RST 16
@@ -63,8 +63,8 @@
 // #define RTC_ADDR 0x68
 
 // UART data interface pins (ESP32 only)
-//#define RXD2 14
-//#define TXD2 15
+#define RXD2 14
+#define TXD2 15
 
 //#define USE_LR  // Use ESP-NOW LR mode (ESP32 only)
 

@@ -4,7 +4,7 @@
 
 #include <fdrs_globals.h>
 
-#define READING_ID    2   //Unique ID for this sensor
+#define READING_ID    5   //Unique ID for this sensor
 #define GTWY_MAC      0x01 //Address of the nearest gateway
 
 //#define USE_ESPNOW
@@ -20,7 +20,7 @@
 #define I2C_SCL 22 //6
 
 // OLED -- Displays console debugging messages on an SSD1306 I²C OLED
-#define USE_OLED    
+//#define USE_OLED    
 #define OLED_HEADER "FDRS"
 #define OLED_PAGE_SECS 30
 #define OLED_RST -1
