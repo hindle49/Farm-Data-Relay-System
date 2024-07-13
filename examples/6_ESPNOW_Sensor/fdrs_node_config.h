@@ -16,8 +16,8 @@
 #define DBG_LEVEL 1    // 0 for minimal messaging, 1 for troubleshooting, 2 for development
 
 // I2C - OLED or RTC
-#define I2C_SDA 5
-#define I2C_SCL 6
+#define I2C_SDA 21  //5
+#define I2C_SCL 22  //6
 
 // OLED -- Displays console debugging messages on an SSD1306 I²C OLED
 // #define USE_OLED    

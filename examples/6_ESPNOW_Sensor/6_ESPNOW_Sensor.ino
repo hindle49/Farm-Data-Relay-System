@@ -7,16 +7,32 @@
 //
 
 #include "fdrs_node_config.h"
+//#include <Adafruit_BME280.h>
+#include <Adafruit_BMP280.h>
 #include <fdrs_node.h>
 
-float data1;
-float data2;
+Adafruit_BMP280 bmp;
+
+//float data1;
+//float data2;
 
 void setup() {
   beginFDRS();
+   
+  while (!bmp.begin(0x76)) {
+    Serial.println("BMP not initializing!");
+    delay(1000);  // 1 second
+  }
 }
 void loop() {
-  data1 = readHum();
+
+  loadFDRS(bmp.readTemperature(), TEMP_T);
+  //loadFDRS(bme.readHumidity(), HUMIDITY_T);
+  loadFDRS(bmp.readPressure() / 100.0F, PRESSURE_T);
+  sendFDRS();
+  sleepFDRS(60);  //Sleep time in seconds
+  
+  /*data1 = readHum();
   loadFDRS(data1, HUMIDITY_T);
   data2 = readTemp();
   loadFDRS(data2, TEMP_T);
@@ -34,5 +50,7 @@ float readTemp() {
 }
 
 float readHum() {
-  return random(0, 100);
+  return random(0, 100);  */
+
+
 }
