@@ -2,23 +2,22 @@
 //
 //  Sensor Configuration
 
-
 #include <fdrs_globals.h>
 
-#define READING_ID    6   //Unique ID for this sensor
+#define READING_ID    7   //Unique ID for this sensor
 #define GTWY_MAC      0x01 //Address of the nearest gateway
 
 #define USE_ESPNOW
 //#define USE_LORA
-#define DEEP_SLEEP
+//#define DEEP_SLEEP
 //#define POWER_CTRL    14
 
 #define FDRS_DEBUG     // Enable USB-Serial debugging
-#define DBG_LEVEL 2    // 0 for minimal messaging, 1 for troubleshooting, 2 for development
+#define DBG_LEVEL 1    // 0 for minimal messaging, 1 for troubleshooting, 2 for development
 
-// I2C - OLED or RTC
-#define I2C_SDA 21  //5
-#define I2C_SCL 22  //6
+/// I2C - OLED or RTC
+#define I2C_SDA 21
+#define I2C_SCL 22
 
 // OLED -- Displays console debugging messages on an SSD1306 I²C OLED
 // #define USE_OLED    
@@ -31,7 +30,7 @@
 #define LORA_SS 18
 #define LORA_RST 14
 #define LORA_DIO 26
-#define LORA_BUSY  33      //DIO0 or 1    pin 34 or 35 on the Heltec
+#define LORA_BUSY  33
 //#define USE_SX126X
 
 //#define CUSTOM_SPI
