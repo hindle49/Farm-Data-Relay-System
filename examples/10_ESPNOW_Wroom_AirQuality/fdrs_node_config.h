@@ -3,7 +3,7 @@
 //  Sensor Configuration
 
 
-#define READING_ID    8   //Unique ID for this sensor
+#define READING_ID    10   //Unique ID for this sensor
 #define GTWY_MAC      0x01 //Address of the nearest gateway
 
 #define USE_ESPNOW
@@ -15,7 +15,7 @@
 //#define DBG_LEVEL 0    // 0 for minimal messaging, 1 for troubleshooting, 2 for development
 
 // I2C - OLED or RTC
-#define I2C_SDA 21
+#define I2C_SDA 21  // These have been changed for the Wroom module
 #define I2C_SCL 22
 
 // OLED -- Displays console debugging messages on an SSD1306 I²C OLED
