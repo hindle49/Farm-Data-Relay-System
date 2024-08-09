@@ -3,7 +3,9 @@
 //  Sensor Configuration
 
 
-#define READING_ID    10   //Unique ID for this sensor
+#include <fdrs_globals.h>
+
+#define READING_ID    11   //Unique ID for this sensor
 #define GTWY_MAC      0x01 //Address of the nearest gateway
 
 #define USE_ESPNOW
@@ -11,15 +13,15 @@
 #define DEEP_SLEEP
 //#define POWER_CTRL    14
 
-#define FDRS_DEBUG
-//#define DBG_LEVEL 0    // 0 for minimal messaging, 1 for troubleshooting, 2 for development
+#define FDRS_DEBUG     // Enable USB-Serial debugging
+#define DBG_LEVEL 2    // 0 for minimal messaging, 1 for troubleshooting, 2 for development
 
 // I2C - OLED or RTC
-#define I2C_SDA 21  // These have been changed for the Wroom module
-#define I2C_SCL 22
+#define I2C_SDA   5  //21  //5
+#define I2C_SCL  6  // 22  //6
 
 // OLED -- Displays console debugging messages on an SSD1306 I²C OLED
-//#define USE_OLED    
+// #define USE_OLED    
 #define OLED_HEADER "FDRS"
 #define OLED_PAGE_SECS 30
 #define OLED_RST -1
@@ -29,7 +31,7 @@
 #define LORA_SS 18
 #define LORA_RST 14
 #define LORA_DIO 26
-#define LORA_BUSY  33
+#define LORA_BUSY  33      //DIO0 or 1    pin 34 or 35 on the Heltec
 //#define USE_SX126X
 
 //#define CUSTOM_SPI
